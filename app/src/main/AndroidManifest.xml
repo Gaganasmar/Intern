@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.intern" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/psb"
+        android:label="Malaysia Town Ship"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name=".MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DisplayMessageActivity"
+            android:label="Malaysia Town Ship"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Electricity" />
+        <activity android:name=".Salary" />
+        <activity android:name=".Member" />
+        <activity android:name=".Memmaint" />
+        <activity android:name=".Memcomplaint" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity" />
+    </application>
+
+</manifest>
